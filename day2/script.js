@@ -87,7 +87,8 @@ let y=5;
 //other = invalid
 
 
-let grade = 'a'; 
+//let grade = prompt("enter the case");
+let grade = 'b' ;
 switch(grade){
     case 'a':
         console.log("excellent");
