@@ -16,6 +16,7 @@
 
 let balance = 40000;
 let menu;
+let transaction=[];
 
 do {
   menu = parseInt(prompt(`Press:
@@ -34,6 +35,7 @@ do {
       if ( depositMoney > 0) {
         balance =balance + depositMoney;
         console.log("Deposit successful. Total Balance:", balance);
+        transaction.push("deposited money: "+depositMoney);
       } else {
         console.log("Enter amount greater than 0");
       }
@@ -45,6 +47,7 @@ do {
         if (withdrawMoney <= balance) {
           balance = balance - withdrawMoney;
           console.log("Withdrawal successful. Total Balance:", balance);
+          transaction.push("Withdraw Money: "+withdrawMoney);
         } else {
           console.log("Insufficient balance.");
         }
@@ -66,15 +69,15 @@ do {
 
 //transaction history using dummy data and for loop
 
-let transactionHistory = [
-  "Deposited Rs. 5000",
-  "Withdrew Rs. 2000",
-  "Deposited Rs. 3000",
-  "Withdrew Rs. 1000",
-  "Deposited Rs. 8000"
-];
+// let transactionHistory = [
+//   "Deposited Rs. 5000",
+//   "Withdrew Rs. 2000",
+//   "Deposited Rs. 3000",
+//   "Withdrew Rs. 1000",
+//   "Deposited Rs. 8000"
+// ];
 
-console.log("Last 5 Transactions");
-for (let i = 0; i < transactionHistory.length; i++) {
-  console.log((i + 1) + ". " + transactionHistory[i]);
+console.log("Last  Transactions");
+for (let i = 0; i < transaction.length; i++) {
+  console.log((i + 1) + ". " + transaction[i]);
 }
