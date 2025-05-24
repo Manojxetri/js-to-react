@@ -70,19 +70,19 @@ function determineClassPerformance(average){
     console.log("----Class Performance:-----")
      
     if(average>=90){
-        console.log("A");
+        console.log("------A-----");
     }
     else if(average>=80 && average <=89){
-        console.log("B");
+        console.log("------B------");
     }
     else if(average>=70 && average<=79){
-        console.log("C");
+        console.log("------C------");
     }
     else if(average >=60 && average <=69){
-        console.log("D");
+        console.log("------D------");
     }
     else{
-        console.log("F");
+        console.log("------F------");
     }
 }
 
