@@ -9,32 +9,41 @@
 */
 
 
-function countFrequency(array){
-     let frequency=[];
+function countFrequency(arr){
 
-     for (let i=0;i<array.length;i++){
-        let num=array[i];
+for (let i = 0; i < arr.length; i++) {
+    let count = 0;
+    let skip = false;
 
-        if(frequency[num]===undefined){
-            frequency[num]=1;
+    
+    for (let j = 0; j < i; j++) {
+        if (arr[i] === arr[j]) {
+            skip = true; 
+            break;
         }
-        else{
-            frequency[num]++;
-        }
-     }
-
-    for(let i=0;i<frequency.length;i++){
-          if(frequency[i]===4){
-            console.log(i+" is frequent");
-          }
-          else if(frequency[i]===3){
-            console.log(i+" is common");
-          }
-          else {
-            console.log(i+" is rare")
-          }
-          
     }
+
+    if (skip === true) {
+        continue; 
+    }
+
+    
+    for (let k = 0; k < arr.length; k++) {
+        if (arr[i] === arr[k]) {
+            count++;
+        }
+    }
+
+
+    if (count >= 4) {
+        console.log(arr[i] + " = frequent");
+    } else if (count === 3) {
+        console.log(arr[i] + " = common");
+    } else if (count === 1) {
+        console.log(arr[i] + " = rare");
+    }
+}
+
 
 }
     
