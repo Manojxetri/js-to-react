@@ -47,5 +47,5 @@ for (let i = 0; i < arr.length; i++) {
 
 }
     
-    array=[10,10,11,12,11,13,10,10,11,15];
+    array=[1,1,1,1,1,2,2,2,3,4,4,4,4,5,5,5,3,3,6];
     countFrequency(array);

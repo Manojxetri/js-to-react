@@ -27,8 +27,16 @@ function addStudentName(name,grade){
             switch(choice){
                 
                 case 1:
-                   let  studentName=prompt("Student Name is");
+                      let  studentName
+                   do{
+
+                       studentName = prompt("Student Name is");
+                   }while(studentName == 0);
+                    
+
+                 
                    console.log (name.push(studentName) +": "+ "Student Name: "+studentName);
+                   
                     break;
 
                     case 2:
