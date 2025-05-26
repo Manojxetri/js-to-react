@@ -1,0 +1,32 @@
+.counter {
+  /* border: 2px solid black; */
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 180px;
+  margin-left: 600px;
+}
+#heading{
+    color: red;
+    font-size: 40px;
+    margin-left: 20px;
+}
+#number{
+    color: blue;
+    font-size: 35px;
+    margin-left: 75px;
+}
+#increment{
+    background-color: lightgreen;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+#decrement{
+    background-color:red;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    
+}

@@ -53,38 +53,40 @@
               areAnargramas("hello","world"-false)
 */
 
-function areAnagrams(str1, str2) {
+// function areAnagrams(str1, str2) {
   
-  if (str1.length !== str2.length) {
-    return false;
-  }
-
-  
-  let count = {};
+//   if (str1.length !== str2.length) {
+//     return false;
+//   }
 
   
-  for (let char of str1) {
-    if (count[char]) {
-      count[char]++;
-    } else {
-      count[char] = 1;
-    }
-  }
-
-
-  for (let char of str2) {
-    if (!count[char]) {
-      return false;
-    } else {
-      count[char]--;
-    }
-  }
+//   let count = {};
 
   
-  return true;
-}
+//   for (let char of str1) {
+//     if (count[char]) {
+//       count[char]++;
+//     } else {
+//       count[char] = 1;
+//     }
+//   }
 
-// Examples
-console.log(areAnagrams("listen", "silent")); // true
-console.log(areAnagrams("hello", "world"));   // false
+
+//   for (let char of str2) {
+//     if (!count[char]) {
+//       return false;
+//     } else {
+//       count[char]--;
+//     }
+//   }
+
+
+//   return true;
+// }
+
+// // Examples
+// console.log(areAnagrams("listen", "silent")); // true
+// console.log(areAnagrams("hello", "world"));   // false
+
+
 
