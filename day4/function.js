@@ -77,16 +77,22 @@
 // console.log(x);
 // console.log(y);
 
-let obj={
-    nam:"ram",
-    age:18,
-    clas:12
-}
+// let obj={
+//     nam:"ram",
+//     age:18,
+//     clas:12
+// }
 
-let{nam,age,clas}=obj;
+// let{nam,age,clas}=obj;
 
-console.log(nam,age,clas);
+// console.log(nam,age,clas);
 
+
+let a=[1,2,3];
+let b=[4,5,6];
+
+let merge=[...a,...b];
+console.log(merge);
 
 
 

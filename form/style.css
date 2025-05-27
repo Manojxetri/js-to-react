@@ -1,0 +1,38 @@
+#form{
+    /* border: 1px solid blue; */
+    /* height: 700px; */
+    width: 500px;
+    /* display: flex; */
+    justify-content: center;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 2px 2px 12px 9px black;
+    padding-bottom: 20px;
+}
+h1{
+    font-size: 45px;
+    margin-top: 25px;
+    margin-left: 200px;
+    color: red;
+}
+label{
+    
+    margin-left: 140px;
+    font-size: 30px;
+}
+input{
+    margin-top: 5px;
+    margin-left: 140px;
+    height: 40px;
+    width: 250px;
+    border-color: green;
+    font-size: 16px;
+}
+#submit{
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+}
