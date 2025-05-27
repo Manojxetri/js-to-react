@@ -60,15 +60,35 @@
 
 //anonymous function
 
-let result=(a,b)=>{return a+b};
-console.log(result(2,3));
+// let result=(a,b)=>{return a+b};
+// console.log(result(2,3));
 
 
-hello();
+// hello();
 
-function hello(){
-    console.log("hello");
+// function hello(){
+//     console.log("hello");
+// }
+
+
+// let arr=[1,2,3];
+// let[x,y]=arr;
+
+// console.log(x);
+// console.log(y);
+
+let obj={
+    nam:"ram",
+    age:18,
+    clas:12
 }
+
+let{nam,age,clas}=obj;
+
+console.log(nam,age,clas);
+
+
+
 
 
 
