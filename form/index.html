@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <form id="form">
-        <h1>Form</h1><hr>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" required><br><br>
-        <label for="password">password:</label><br>
-        <input type="password" id="password" minlength="8" required><br><br>
-        <input type="submit" id="submit">
-
-        <p id="details" ></p>
-    </form>
-    <script src="script.js"></script>
+  <form id="form" novalidate>
+    <h1>Form</h1><hr>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" minlength="8" required><br><br>
+    <input type="submit" id="submit">
+    <p id="details"></p>
+  </form>
+  <script src="script.js"></script>
 </body>
 </html>

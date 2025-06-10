@@ -8,12 +8,15 @@ function output(event) {
   let userName = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
-  let maskedPassword = "*".repeat(password.length);
+  let maskedPassword = "* ".repeat(password.length);
   details.innerHTML = `<hr><h2>Details:</h2><br>
       <strong>Name:</strong> ${userName}<br>
       <strong>Email:</strong>${email}<br>
       <strong>Password:</strong>${maskedPassword}`;
   alert("submitted successfully");
+
+  
+
   details.style.margin="40px";
 }
 

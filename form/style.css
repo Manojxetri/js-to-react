@@ -36,3 +36,10 @@ input{
     border: none;
     cursor: pointer;
 }
+.error p {
+  color: red;
+  display: none;
+}
+input.error-field{
+    border-color:red !important;
+}
