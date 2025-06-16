@@ -23,7 +23,9 @@ function assignColor() {
     let char = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
+        
         color += char[Math.floor(Math.random() * 16)];
+        console.log(color);
     }
     document.body.style.backgroundColor = color;
 }
@@ -35,3 +37,4 @@ function handleInterval() {
 function stopInterval() {
     clearInterval(intervalId);
 }
+
