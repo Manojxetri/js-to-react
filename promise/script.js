@@ -50,17 +50,38 @@
         
         // async await
 
-        async function fetchData(){
-            try{
-            let response=(await fetch("https://fakeapi.net/products"));
-            console.log(await response.json());
-            }
-            catch(error)
-            {
-             console.log(error);
-            }
-        }
+        // async function fetchData(){
+        //     try{
+        //     let response=(await fetch("https://fakeapi.net/product"));
+        //     console.log(await response.json());
+        //     }
+        //     catch(error)
+        //     {
+        //      console.log("error in fetching api");
+        //     }
+        // }
 
-        fetchData();
+        // fetchData();
 
-        
+
+        let myPromise = new Promise((resolve,reject) => {
+             let randomNUmber=Math.floor(Math.random()*10);
+             setTimeout(()=>{
+             if(randomNUmber%2===0){
+                resolve(randomNUmber)
+             }
+             else{
+                reject("number is odd")
+             }
+            },5000)
+             
+        })
+
+        console.log(myPromise);
+
+        myPromise.then((res)=>{
+            console.log(res);
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
